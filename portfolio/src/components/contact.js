@@ -4,7 +4,7 @@ class Contact extends Component {
     render() {
         return (
             <section className="contact-style" id="contact">
-            <h2>Contact me</h2>
+            <h2 className="projects-section-title">Contact me</h2>
             <nav>
               <ul className="contact-list">
                 <li className="contact-item">

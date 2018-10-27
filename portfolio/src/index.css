@@ -184,7 +184,7 @@ footer {
 }
 
 .contact-style {
-  height: 20em;
+  height: 100vh;
 }
 
 .contact-list {
@@ -207,24 +207,14 @@ footer {
   grid-column: 2;
 }
 
-.fa {
-  font-size: 5em;
+.fa-style-my {
   color: white;
 }
 
-.fa:hover,
+.fa-style-my:hover,
 .nav-link:hover {
   color: #ae003a;
   transition: 0.5s;
-}
-
-.fa-heart {
-  font-size: 1em;
-  color: #ae003a;
-}
-
-.fa-mobile {
-  font-size: 7em;
 }
 
 footer {
@@ -276,13 +266,10 @@ footer {
     justify-items: end;
   }
 
-  .contact-style {
-    height: 12em;
-  }
-
   .contact-list {
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
+    grid-gap: 2em;
   }
 
   .contact-item:nth-child(even) {

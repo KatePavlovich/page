@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fab, fas)
 
 class Contact extends Component {
     render() {
@@ -9,27 +15,27 @@ class Contact extends Component {
               <ul className="contact-list">
                 <li className="contact-item">
                   <a href="https://github.com/KatePavlovich" target="blank">
-                    <i className="fa fa-github"></i>
+                    <FontAwesomeIcon icon={['fab', 'github']} className="fa-style-my" />
                   </a>
                 </li>
                 <li className="contact-item">
                   <a href="https://www.linkedin.com/in/ekaterinaPaulovich/" target="blank">
-                    <i className="fa fa-linkedin"></i>
+                  <FontAwesomeIcon icon={['fab', 'linkedin']} className="fa-style-my" />
                   </a>
                 </li>
                 <li className="contact-item">
                   <a href="https://web.facebook.com/kate.pavlovich.1" target="blank">
-                    <i className="fa fa-facebook-f"></i>
+                  <FontAwesomeIcon icon={['fab', 'facebook-f']} className="fa-style-my" />
                   </a>
                 </li>
                 <li className="contact-item">
                   <a href="mailto:ekate.pavlovich@gmail.com">
-                    <i className="fa fa-envelope"></i>
+                  <FontAwesomeIcon icon={['fas', 'envelope']} className="fa-style-my" />
                   </a>
                 </li>
                 <li className="contact-item">
                   <a href="tel:+375293207933">
-                    <i className="fa fa-mobile"></i>
+                  <FontAwesomeIcon icon={['fas', 'mobile']} className="fa-style-my" />
                   </a>
                 </li>
               </ul>

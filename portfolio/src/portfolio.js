@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Route } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Menu from './components/menu';
 import WelcomeSection from './components/aboutMe';
 import Projects from './components/projects';
@@ -10,10 +10,13 @@ class Portfolio extends Component {
     return (
       <HashRouter>
         <div className="wrapper-page">
-            <Menu />
-          <Route path='/welcomeSection' component={WelcomeSection} />
-          <Route path='/projects' component={Projects} />
-          <Route path='/contact' component={Contact} />
+          <Menu />
+          <Switch>
+            <Route path='/welcomeSection' component={WelcomeSection} />
+            <Route path='/projects' component={Projects} />
+            <Route path='/contact' component={Contact} />
+            <Route component={WelcomeSection} />
+          </Switch>
         </div>
       </HashRouter>
     );

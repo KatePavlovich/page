@@ -130,6 +130,7 @@ h2 {
 .projects-section-title {
   text-align: center;
   margin-top: 1em;
+  color: #555555;
 }
 
 .project-tile {
@@ -180,7 +181,7 @@ footer {
   display: grid;
   justify-items: center;
   padding: 0.7em;
-  background-color: #85d836;
+  background-color: #99c3c8;
 }
 
 .contact-style {
@@ -257,6 +258,10 @@ footer {
     justify-self: center;
   }
 
+  .content {
+    background: url(https://github.com/KatePavlovich/rsschool-codejam1-cv/blob/gh-pages/img/35968491-pastel-wallpaper.jpg?raw=true);
+  }
+
   .contacts-wrapper {
     grid-row: 1;
     grid-column: 2;
@@ -302,10 +307,6 @@ footer {
 
   .description-columns {
     grid-template-columns: 2fr 7fr;
-  }
-
-  .content {
-    background: url(https://github.com/KatePavlovich/rsschool-codejam1-cv/blob/gh-pages/img/35968491-pastel-wallpaper.jpg?raw=true);
   }
 
   .grid {

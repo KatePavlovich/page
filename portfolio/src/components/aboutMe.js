@@ -53,7 +53,7 @@ class WelcomeSection extends Component {
                     </div>
                     <div className="description-columns">
                         <p className="description-points-style">Skills: </p>
-                        <p>JavaScript, HTML5, CSS3, Jquery, Sass, Bootstrap, Ajax</p>
+                        <p>JavaScript, HTML5, CSS3, Jquery, Sass, Bootstrap, Ajax, OOP, ES6, Git, React, Redux</p>
                     </div>
                     <div className="description-columns">
                         <p className="description-points-style">English level: </p>

@@ -7,7 +7,7 @@ class Menu extends Component {
             <header>
                 <nav className="header-navbar" id="navbar">
                     <ul className="header-menu">
-                        <li><Link to='/welcomeSection' className="nav-link">about</Link></li>
+                        <li><Link to='/' className="nav-link">about</Link></li>
                         <li><Link to='/projects' className="nav-link">work</Link></li>
                         <li><Link to='/contact' className="nav-link">contact</Link></li>
                     </ul>
@@ -18,3 +18,12 @@ class Menu extends Component {
 }
 
 export default Menu;
+
+/* 
+<div>
+<Link to="/">Home</Link>
+|
+<Link to="/about">About</Link>
+|
+<Link to="/login">Loginform</Link>
+</div> */

@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import Menu from "./menu";
 import Project from './project'
 import projects from './../projectsBase'
 
@@ -17,15 +18,18 @@ class Projects extends PureComponent {
             </li>
         ))
         return (
-            <section className="content" id="projects">
-                <h2 className="projects-section-title">Here are some of my projects...</h2>
-                <ul className="grid">
-                    {projectsList}
-                </ul>
-                <p className="links-align">More projects on <a className="profile-link" href="https://github.com/KatePavlovich" target="blank">github.com </a>
-                    and <a className="profile-link" href="https://codepen.io/asylumhere/" target="blank">codepen.io</a>
-                </p>
-            </section>
+            <div>
+                <Menu />
+                <section className="content" id="projects">
+                    <h2 className="projects-section-title">Here are some of my projects...</h2>
+                    <ul className="grid">
+                        {projectsList}
+                    </ul>
+                    <p className="links-align">More projects on <a className="profile-link" href="https://github.com/KatePavlovich" target="blank">github.com </a>
+                        and <a className="profile-link" href="https://codepen.io/asylumhere/" target="blank">codepen.io</a>
+                    </p>
+                </section>
+            </div>
         )
     }
 }

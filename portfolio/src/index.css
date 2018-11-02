@@ -40,10 +40,15 @@ header {
 
 .nav-link {
   font-size: 1em;
-  font-weight: 900;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: #555555;
+}
+
+.nav-link--active {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ae003a;
 }
 
 main {

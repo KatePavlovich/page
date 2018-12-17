@@ -1,0 +1,47 @@
+.project__container {
+  display: grid;
+}
+
+.project__button {
+  display: grid;
+  justify-self: right;
+  padding: 1rem;
+  text-transform: uppercase;
+  border: none;
+  background: #99c3c8;
+}
+
+.project__button:hover {
+  color: #ae003a;
+}
+
+.toggleAnimation__container {
+  display: grid;
+  justify-items: center;
+}
+
+.toggleAnimation-enter {
+  opacity: .01;
+  transform: rotate(0deg);
+	transform: translateX(-100%);
+  }
+  
+  .toggleAnimation-enter.toggleAnimation-enter-active {
+    opacity: 1;
+    transform: translateX(100px);
+    transform: rotate(360deg);
+    transition: all 500ms ease-in-out;
+  }
+  
+  .toggleAnimation-leave {
+    opacity: 1;
+    transform: translateX(100px);
+    transform: rotate(360deg);
+  }
+  
+  .toggleAnimation-leave.toggleAnimation-leave-active {
+    opacity: 01;
+    transform: translateX(-100%);
+    transform: rotate(0deg);
+    transition: all 300ms ease-in-out
+  }

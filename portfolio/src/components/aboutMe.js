@@ -61,6 +61,9 @@ class WelcomeSection extends Component {
                           English level corresponds to B1, am able to read fiction and technical literature and fluent in
     verbal communication</p>
                     </div>
+                    <div className="description-columns">
+                        <a className="description-points-style" href="images/xxx.jpg" download>download CV </a>
+                    </div>
                 </section>
             </div>
         )

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import Menu from "./menu";
 import Project from './project/project'
-import projects from './../projectsBase'
+import projects from '../projectsBase'
 
 class Projects extends PureComponent {
     render() {

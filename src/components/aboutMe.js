@@ -1,11 +1,10 @@
 import React, { Component } from "react"
-import Menu from "./menu"
+import withLayout from "./Layout"
 
 class WelcomeSection extends Component {
   render() {
     return (
       <div>
-        <Menu />
         <section className="welcome-section" id="welcome-section">
           <h1>Kate Pavlovich</h1>
           <div className="intro-wrapper">
@@ -131,4 +130,4 @@ class WelcomeSection extends Component {
   }
 }
 
-export default WelcomeSection
+export default withLayout(WelcomeSection)

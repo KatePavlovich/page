@@ -12,32 +12,6 @@ body {
   min-height: 100%;
 }
 
-header {
-  display: grid;
-  position: fixed;
-  overflow: hidden;
-  background-color: #f9f4ed;
-  padding: 0.8em 0;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-.header-navbar {
-  text-align: center;
-  justify-self: center;
-}
-
-.header-menu {
-  display: grid;
-  grid-gap: 1em;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.header-menu li {
-  list-style-type: none;
-}
-
 .nav-link {
   font-size: 1em;
   text-decoration: none;
@@ -56,46 +30,15 @@ main {
   margin-top: 2em;
 }
 
-.welcome-section {
-  display: grid;
-  height: 100vh;
-  overflow: auto;
-  background: #99c3c8;
-  padding: 1em;
-}
-
-.welcome-section p {
-  text-align: justify;
-}
-
-.intro-wrapper,
-.contacts-wrapper-item {
+.intro-wrapper {
   display: grid;
   align-items: center;
   justify-items: center;
 }
 
-.contacts-wrapper-item {
-  grid-template-columns: 1fr 1fr;
-  justify-items: start;
-}
-
 .description-indent {
   text-indent: 1.5em;
   margin: 0.5em;
-}
-
-.bio-photo-mob {
-  border-radius: 50%;
-  background: #f9f4ed;
-  background-size: contain;
-}
-
-h1 {
-  font-size: 2em;
-  text-align: center;
-  margin: 1em;
-  color: #555;
 }
 
 .description {
@@ -122,20 +65,6 @@ h1 {
   font-weight: bold;
 }
 
-.download-button {
-  padding: 15px 20px;
-  font-size: 18px;
-  text-align: center;
-  color: #fff;
-  opacity: 0.7;
-  background-color: #06bc9b;
-  background-image: linear-gradient(left, #06bc9b, #1ba49c);
-}
-
-.download-button:hover {
-  opacity: 1;
-}
-
 .content {
   display: grid;
   grid-template-columns: 1fr;
@@ -144,12 +73,6 @@ h1 {
 h2 {
   padding: 1em;
   color: #ae003a;
-}
-
-.projects-section-title {
-  text-align: center;
-  margin-top: 1em;
-  color: #555555;
 }
 
 .project-tile {
@@ -195,81 +118,14 @@ h2 {
   margin-bottom: 1em;
 }
 
-.contact-style,
-footer {
-  display: grid;
-  justify-items: center;
-  padding: 0.7em;
-  background-color: #99c3c8;
-}
-
-.contact-style {
-  height: 100vh;
-}
-
-.contact-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.contact-item {
-  font-size: 3em;
-  text-align: center;
-  list-style-type: none;
-  margin: 0.1em;
-}
-
-.contact-item:nth-child(even) {
-  grid-column: 3;
-}
-
-.contact-item:last-child {
-  grid-column: 2;
-}
-
-.fa-style-my {
-  color: white;
-}
-
-.fa-style-my:hover,
 .nav-link:hover {
   color: #ae003a;
   transition: 0.5s;
 }
 
-footer {
-  background: #530053;
-  color: #ffffff;
-}
-
 @media (min-width: 768px) {
-  .header-navbar {
-    display: grid;
-    grid-template-areas: ". col";
-    grid-template-columns: [col] 2fr [col] 1fr;
-  }
-
-  .header-menu {
-    grid-area: col;
-  }
-
-  .header-menu li {
-    justify-self: end;
-  }
-
-  .welcome-section {
-    height: auto;
-  }
-
   .intro-wrapper {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .bio-photo-mob {
-    border-radius: 5px;
-    background: #f9f4ed;
-    background-size: contain;
-    justify-self: center;
   }
 
   .description {
@@ -285,43 +141,12 @@ footer {
     grid-row: 1;
     grid-column: 2;
   }
-
-  .contacts-wrapper-item {
-    justify-items: end;
-  }
-
-  .contact-list {
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
-    grid-gap: 2em;
-  }
-
-  .contact-item:nth-child(even) {
-    grid-column: unset;
-  }
-
-  .contact-item:last-child {
-    grid-column: unset;
-  }
 }
 
 @media (min-width: 1024px) {
   body {
     width: 1024px;
     margin: 0 auto;
-  }
-
-  header {
-    width: 1024px;
-  }
-
-  .header-navbar {
-    grid-template-columns: [col] 3fr [col] 1fr;
-  }
-
-  .header-menu {
-    grid-gap: 5em;
-    margin-right: 1em;
   }
 
   .description-columns {

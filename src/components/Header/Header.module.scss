@@ -1,0 +1,61 @@
+@import "src/styles/utility";
+
+header {
+  display: grid;
+  width: 100%;
+  max-width: 1024px;
+  position: fixed;
+  top: 0;
+  padding: 0.8em 0;
+  overflow: hidden;
+  background-color: #fff;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.navbar {
+  text-align: center;
+  justify-self: center;
+
+  @media (min-width: $md) {
+    & {
+      display: grid;
+      grid-template-areas: ". col";
+      grid-template-columns: [col] 2fr [col] 1fr;
+    }
+  }
+
+  @media (min-width: $xl) {
+    & {
+      grid-template-columns: [col] 3fr [col] 1fr;
+    }
+  }
+}
+
+.menu {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (min-width: $md) {
+    & {
+      grid-area: col;
+    }
+  }
+  @media (min-width: $xl) {
+    & {
+      grid-gap: 5em;
+      margin-right: 1em;
+    }
+  }
+
+  & li {
+    list-style-type: none;
+
+    @media (min-width: $md) {
+      & {
+        justify-self: end;
+      }
+    }
+  }
+}

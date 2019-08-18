@@ -1,0 +1,97 @@
+@import "src/styles/utility";
+
+.section {
+  display: grid;
+  padding: 1rem 0;
+  margin-top: 2.7rem;
+
+  @media (min-width: $md) {
+    .welcome-section {
+      height: auto;
+    }
+  }
+
+  & p {
+    text-align: justify;
+  }
+}
+
+.parallax {
+  background-image: url("https://images.unsplash.com/photo-1492546643178-96d64f3fd824?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80");
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.introSection {
+  display: grid;
+
+  @media (min-width: $md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 1em;
+    align-self: center;
+    color: #555;
+  }
+
+  .contactsWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 1rem;
+
+    @media (min-width: $md) {
+      padding: 32px;
+      justify-items: end;
+    }
+  }
+
+  .contactsWrapperInner {
+    @media (min-width: $md) {
+      padding: 0;
+    }
+  }
+
+  .bioPhoto {
+    border-radius: 50%;
+    background: #f9f4ed;
+    background-size: contain;
+
+    @media (min-width: $md) {
+      & {
+        // justify-self: center;
+      }
+    }
+  }
+}
+
+.contactsWrapperLink {
+  margin-left: 0.5rem;
+  font-weight: bold;
+  color: black;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+.downloadButton {
+  margin: auto;
+  padding: 15px 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  opacity: 0.7;
+  background-color: #06bc9b;
+  background-image: linear-gradient(to right, #06bc9b, #1ba49c);
+
+  &:hover {
+    opacity: 1;
+  }
+}

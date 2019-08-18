@@ -1,11 +1,12 @@
 import React from "react"
-import { ActiveMenuLink } from "./activeLink"
+import { ActiveMenuLink } from "../activeLink"
+import styles from "./Header.module.scss"
 
 const Header = () => {
   return (
     <header>
-      <nav className="header-navbar" id="navbar">
-        <ul className="header-menu">
+      <nav className={styles.navbar} id="navbar">
+        <ul className={styles.menu}>
           <li>
             <ActiveMenuLink activeOnlyWhenExact={true} to="/" label="About" />
           </li>

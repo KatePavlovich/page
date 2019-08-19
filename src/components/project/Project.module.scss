@@ -1,0 +1,70 @@
+@import "src/styles/utility";
+
+.container {
+  display: grid;
+}
+
+.title {
+  display: grid;
+  margin: 1em;
+  justify-content: center;
+  justify-items: center;
+}
+
+.img {
+  width: 100%;
+  max-width: 704px;
+  height: auto;
+}
+
+.itemTitle {
+  padding: 1em 0 0;
+
+  &:hover {
+    color: #ae003a;
+  }
+}
+
+.projectButton {
+  display: grid;
+  justify-self: right;
+  padding: 1rem;
+  text-transform: uppercase;
+  border: none;
+  background: #99c3c8;
+}
+
+.projectButton:hover {
+  color: #ae003a;
+}
+
+.toggleAnimationContainer {
+  display: grid;
+  justify-items: center;
+}
+
+.toggleAnimation-enter {
+  opacity: 0.01;
+  transform: rotate(0deg);
+  transform: translateX(-100%);
+}
+
+.toggleAnimation-enter.toggleAnimation-enter-active {
+  opacity: 1;
+  transform: translateX(100px);
+  transform: rotate(360deg);
+  transition: all 500ms ease-in-out;
+}
+
+.toggleAnimation-leave {
+  opacity: 1;
+  transform: translateX(100px);
+  transform: rotate(360deg);
+}
+
+.toggleAnimation-leave.toggleAnimation-leave-active {
+  opacity: 01;
+  transform: translateX(-100%);
+  transform: rotate(0deg);
+  transition: all 300ms ease-in-out;
+}

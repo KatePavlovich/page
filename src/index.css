@@ -83,41 +83,6 @@ h2 {
   background: #f9f4ed;
 }
 
-.project-title-link {
-  display: grid;
-  margin: 1em;
-  justify-content: center;
-  justify-items: center;
-}
-
-.img-style {
-  width: 100%;
-  max-width: 704px;
-  height: auto;
-}
-
-.item-title {
-  padding: 1em 0 0;
-}
-
-.item-title:hover {
-  color: #ae003a;
-}
-
-.profile-link {
-  color: #530053;
-}
-
-.profile-link:hover {
-  color: red;
-  transition: 1s;
-}
-
-.links-align {
-  text-align: center;
-  margin-bottom: 1em;
-}
-
 .nav-link:hover {
   color: #ae003a;
   transition: 0.5s;
@@ -151,11 +116,5 @@ h2 {
 
   .description-columns {
     grid-template-columns: 2fr 7fr;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 4em;
   }
 }

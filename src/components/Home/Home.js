@@ -156,7 +156,17 @@ class Home extends Component {
           </div>
           <div className="description-columns">
             <p className="description-points-style">English level: </p>
-            <p>B1</p>
+            <div>
+              <p>B1</p>
+              <a
+                className={styles.contactsWrapperLink}
+                href="https://www.efset.org/cert/WhpTPx"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                EF SET Certificate
+              </a>
+            </div>
           </div>
 
           <a

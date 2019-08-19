@@ -1,0 +1,9 @@
+@import "src/styles/utility";
+
+.projectsList {
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4em;
+  }
+}

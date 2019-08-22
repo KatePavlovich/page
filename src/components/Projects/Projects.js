@@ -7,25 +7,18 @@ import styles from "./Projects.module.scss"
 const Projects = () => {
   const projectsList = projects.map(
     ({ id, link, src, width, height, name, technologies }) => (
-      <li key={id} className="project-tile">
-        <Project
-          href={link}
-          src={src}
-          width={width}
-          height={height}
-          name={name}
-          technologies={technologies}
-        />
-      </li>
+      <Project
+        href={link}
+        src={src}
+        width={width}
+        height={height}
+        name={name}
+        technologies={technologies}
+        key={id}
+      />
     )
   )
-  return (
-    <div>
-      <section className="content">
-        <ul className={styles.projectsList}>{projectsList}</ul>
-      </section>
-    </div>
-  )
+  return <section className={styles.content}>{projectsList}</section>
 }
 
 export default withLayout(Projects)

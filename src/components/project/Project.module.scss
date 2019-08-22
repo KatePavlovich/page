@@ -1,14 +1,24 @@
 @import "src/styles/utility";
 
 .container {
-  display: grid;
+  position: relative;
+  padding: 1rem;
+  background-color: #ffffffd6;
+  box-shadow: 5px 5px 20px #f3f3f3;
+  z-index: 12;
 }
 
 .title {
   display: grid;
-  margin: 1em;
+  margin: 1em auto;
   justify-content: center;
   justify-items: center;
+}
+
+.imgWrapper {
+  max-width: 266px;
+  max-height: 190px;
+  overflow: hidden;
 }
 
 .img {
@@ -17,8 +27,16 @@
   height: auto;
 }
 
+.skillItem {
+  list-style-type: none;
+  line-height: 1.5rem;
+}
+
 .itemTitle {
-  padding: 1em 0 0;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #555555;
 
   &:hover {
     color: #ae003a;
@@ -26,45 +44,15 @@
 }
 
 .projectButton {
+  @include button;
   display: grid;
-  justify-self: right;
+  margin-top: 1rem;
   padding: 1rem;
-  text-transform: uppercase;
-  border: none;
-  background: #99c3c8;
-}
-
-.projectButton:hover {
-  color: #ae003a;
+  justify-self: center;
 }
 
 .toggleAnimationContainer {
   display: grid;
   justify-items: center;
-}
-
-.toggleAnimation-enter {
-  opacity: 0.01;
-  transform: rotate(0deg);
-  transform: translateX(-100%);
-}
-
-.toggleAnimation-enter.toggleAnimation-enter-active {
-  opacity: 1;
-  transform: translateX(100px);
-  transform: rotate(360deg);
-  transition: all 500ms ease-in-out;
-}
-
-.toggleAnimation-leave {
-  opacity: 1;
-  transform: translateX(100px);
-  transform: rotate(360deg);
-}
-
-.toggleAnimation-leave.toggleAnimation-leave-active {
-  opacity: 01;
-  transform: translateX(-100%);
-  transform: rotate(0deg);
-  transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in;
 }

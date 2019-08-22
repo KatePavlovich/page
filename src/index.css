@@ -65,22 +65,9 @@ main {
   font-weight: bold;
 }
 
-.content {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
 h2 {
   padding: 1em;
   color: #ae003a;
-}
-
-.project-tile {
-  display: grid;
-  border: 1px solid #eeeeee;
-  border-radius: 5px;
-  margin: 1em;
-  background: #f9f4ed;
 }
 
 .nav-link:hover {
@@ -96,10 +83,6 @@ h2 {
   .description {
     grid-column: 1;
     justify-self: center;
-  }
-
-  .content {
-    background: url(https://github.com/KatePavlovich/rsschool-codejam1-cv/blob/gh-pages/img/35968491-pastel-wallpaper.jpg?raw=true);
   }
 
   .contacts-wrapper {

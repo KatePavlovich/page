@@ -1,6 +1,6 @@
 import React from "react"
 import toggleOpen from "../../decorators/toggleOpen"
-import { CSSTransitionGroup } from "react-transition-group"
+import { useTranslation } from "react-i18next"
 import styles from "./Project.module.scss"
 
 const Project = ({
@@ -13,39 +13,39 @@ const Project = ({
   toggleOpen,
   technologies
 }) => {
-  const text = isOpen ? "hide skills" : "What it gave me"
+  const { t } = useTranslation()
+  const text = isOpen ? t("HideSkills") : t("WhatGave")
 
   const getSkills = () => {
-    const technologiesList = technologies.map((i, index) => (
-      <li key={index}>{i}</li>
+    const technologiesList = technologies.map(i => (
+      <li className={styles.skillItem} key={i}>
+        {i}
+      </li>
     ))
 
-    return isOpen && <ul>{technologiesList}</ul>
+    return technologiesList
   }
 
   return (
     <div className={styles.container}>
       <a className={styles.title} href={href} target="blank">
-        <img
-          className={styles.img}
-          src={src}
-          alt={name}
-          width={width}
-          height={height}
-        />
-        <h3 className="itemTitle">{name}</h3>
+        <h3 className={styles.itemTitle}>{name}</h3>
+        <div className={styles.imgWrapper}>
+          <img
+            className={styles.img}
+            src={src}
+            alt={name}
+            width={width}
+            height={height}
+          />
+        </div>
       </a>
+      {/* <div className={styles.skillsWrapper}> */}
+      {isOpen && <ul>{getSkills()}</ul>}
+      {/* </div> */}
       <button onClick={toggleOpen} className={styles.projectButton}>
         {text}
       </button>
-      <CSSTransitionGroup
-        transitionName="toggleAnimation"
-        transitionEnterTimeout={500}
-        transitionLeaveTimeout={300}
-        className={styles.toggleAnimationContainer}
-      >
-        {getSkills()}
-      </CSSTransitionGroup>
     </div>
   )
 }

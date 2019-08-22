@@ -1,7 +1,7 @@
 @import "src/styles/utility";
 
 header {
-  display: grid;
+  display: flex;
   width: 100%;
   max-width: 1024px;
   position: fixed;
@@ -57,5 +57,25 @@ header {
         justify-self: end;
       }
     }
+  }
+}
+
+.languageBtn {
+  text-transform: uppercase;
+  border: none;
+  outline-color: transparent;
+  margin: auto;
+  padding: 5px 6px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  opacity: 0.7;
+  background-color: #06bc9b;
+  background-image: -webkit-linear-gradient(left, #06bc9b, #1ba49c);
+  background-image: linear-gradient(to right, #06bc9b, #1ba49c);
+
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
   }
 }

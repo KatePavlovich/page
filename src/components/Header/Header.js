@@ -2,9 +2,11 @@ import React, { useState } from "react"
 import { ActiveMenuLink } from "../activeLink"
 import styles from "./Header.module.scss"
 import i18n from "../../i18n"
+import { useTranslation } from "react-i18next"
 
 const Header = () => {
   const [lng, setLng] = useState("en")
+  const { t } = useTranslation()
 
   const changeLanguage = lng => {
     i18n.changeLanguage(lng)
@@ -32,13 +34,17 @@ const Header = () => {
       <nav className={styles.navbar}>
         <ul className={styles.menu}>
           <li>
-            <ActiveMenuLink activeOnlyWhenExact={true} to="/" label="About" />
+            <ActiveMenuLink
+              activeOnlyWhenExact={true}
+              to="/"
+              label={t("About")}
+            />
           </li>
           <li>
-            <ActiveMenuLink to="/projects" label="work" />
+            <ActiveMenuLink to="/projects" label={t("Work")} />
           </li>
           <li>
-            <ActiveMenuLink to="/contact" label="contact" />
+            <ActiveMenuLink to="/contact" label={t("ContactMenu")} />
           </li>
         </ul>
       </nav>

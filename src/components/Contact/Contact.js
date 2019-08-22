@@ -10,7 +10,7 @@ library.add(fab, fas)
 
 const Contact = () => {
   return (
-    <section className={styles.contactSection} id="contact">
+    <section className={styles.contactSection}>
       <h2 className={styles.title}>Contact me</h2>
       <nav>
         <ul className={styles.contactList}>

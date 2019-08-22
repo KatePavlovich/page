@@ -21,7 +21,7 @@ const Projects = () => {
   )
   return (
     <div>
-      <section className="content" id="projects">
+      <section className="content">
         <ul className={styles.projectsList}>{projectsList}</ul>
       </section>
     </div>

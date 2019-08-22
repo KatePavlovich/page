@@ -4,11 +4,7 @@ import styles from "./Header.module.scss"
 import i18n from "../../i18n"
 
 const Header = () => {
-  const defaultLng =
-    (typeof window !== "undefined" && window.navigator.language.slice(0, 2)) ||
-    "en"
-
-  const [lng, setLng] = useState(defaultLng)
+  const [lng, setLng] = useState("en")
 
   const changeLanguage = lng => {
     i18n.changeLanguage(lng)
@@ -33,7 +29,7 @@ const Header = () => {
           en
         </button>
       )}
-      <nav className={styles.navbar} id="navbar">
+      <nav className={styles.navbar}>
         <ul className={styles.menu}>
           <li>
             <ActiveMenuLink activeOnlyWhenExact={true} to="/" label="About" />

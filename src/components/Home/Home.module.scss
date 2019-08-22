@@ -81,16 +81,6 @@
 }
 
 .downloadButton {
-  margin: auto;
+  @include button;
   padding: 15px 20px;
-  font-size: 18px;
-  text-align: center;
-  color: #fff;
-  opacity: 0.7;
-  background-color: #06bc9b;
-  background-image: linear-gradient(to right, #06bc9b, #1ba49c);
-
-  &:hover {
-    opacity: 1;
-  }
 }

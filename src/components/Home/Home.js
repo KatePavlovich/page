@@ -7,7 +7,7 @@ const Home = () => {
   const { t } = useTranslation()
   return (
     <div>
-      <section className={styles.section} id="welcome-section">
+      <section className={styles.section}>
         <div className={styles.parallax} />
 
         <section className={styles.introSection}>
@@ -41,7 +41,7 @@ const Home = () => {
           </div>
         </section>
         <section>
-          <p className="description-indent">
+          <article className="description-indent">
             {t("Content")
               .split("%")
               .map((item, key) => {
@@ -52,7 +52,7 @@ const Home = () => {
                   </p>
                 )
               })}
-          </p>
+          </article>
         </section>
 
         <div className="description-columns">

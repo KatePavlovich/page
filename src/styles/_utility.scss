@@ -6,8 +6,53 @@ $xl: 1024px;
 $container: 1140px;
 
 $green: #06bc9b;
-$red: #bc2a06;
-// color: #ae003a;
+// $red: #fa0534;
+$red: #ff6c08;
+$grey: #555;
+$transparentWhite: #ffffffd6;
+
+@mixin basicBackground {
+  display: grid;
+  padding-top: 4.375rem;
+  padding-bottom: 2rem;
+  max-width: $container;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-image: url(https://images.unsplash.com/photo-1492546643178-96d64f3fd824?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80);
+    height: 2000px;
+    width: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: skew(15deg);
+    z-index: 0;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-image: url(https://images.unsplash.com/photo-1492546643178-96d64f3fd824?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80);
+    height: 2000px;
+    width: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: skew(-35deg);
+    z-index: 0;
+  }
+}
 
 @mixin button {
   text-transform: uppercase;
@@ -26,4 +71,10 @@ $red: #bc2a06;
     opacity: 1;
     cursor: pointer;
   }
+}
+
+@mixin whiteBackground {
+  position: relative;
+  background-color: $transparentWhite;
+  z-index: 1;
 }

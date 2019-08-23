@@ -12,94 +12,28 @@ a {
 body {
   font-family: "Raleway", Helvetica, sans-serif;
   min-height: 100%;
+  max-width: $xl;
+
+  @media (min-width: $xl) {
+    margin: 0 auto;
+  }
 }
 
 .nav-link {
   font-size: 1em;
   text-decoration: none;
   text-transform: uppercase;
-  color: #555555;
-}
+  color: $grey;
 
-.nav-link--active {
-  font-weight: 900;
-  text-transform: uppercase;
-  color: $red;
-}
-
-main {
-  min-height: calc(100vh - 8em);
-  margin-top: 2em;
-}
-
-.intro-wrapper {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-}
-
-.description-indent {
-  text-indent: 1.5em;
-  margin: 0.5em;
-}
-
-.description {
-  color: #f9f4ed;
-  padding: 1em;
-  text-transform: uppercase;
-}
-
-.welcome-section a {
-  color: #000000;
-}
-
-.welcome-section a:hover {
-  color: #f9f4ed;
-}
-
-.description-columns {
-  display: grid;
-  margin: 1em;
-  grid-gap: 1em;
-}
-
-.description-points-style {
-  font-weight: bold;
-}
-
-h2 {
-  padding: 1em;
-  color: $red;
-}
-
-.nav-link:hover {
-  color: $red;
-  transition: 0.5s;
-}
-
-@media (min-width: 768px) {
-  .intro-wrapper {
-    grid-template-columns: 1fr 1fr;
+  &:hover {
+    color: $red;
+    text-shadow: 0 0 0.65px $red, 0 0 0.65px $red;
+    transition: 0.5s;
   }
 
-  .description {
-    grid-column: 1;
-    justify-self: center;
-  }
-
-  .contacts-wrapper {
-    grid-row: 1;
-    grid-column: 2;
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    width: 1024px;
-    margin: 0 auto;
-  }
-
-  .description-columns {
-    grid-template-columns: 2fr 7fr;
+  &--active {
+    text-shadow: 0 0 0.65px $red, 0 0 0.65px $red;
+    text-transform: uppercase;
+    color: $red;
   }
 }

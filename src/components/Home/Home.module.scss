@@ -1,28 +1,7 @@
 @import "src/styles/utility";
 
 .section {
-  display: grid;
-  padding: 1rem 0;
-  margin-top: 2.7rem;
-
-  @media (min-width: $md) {
-    .welcome-section {
-      height: auto;
-    }
-  }
-
-  & p {
-    text-align: justify;
-  }
-}
-
-.parallax {
-  background-image: url("https://images.unsplash.com/photo-1492546643178-96d64f3fd824?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80");
-  height: 200px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include basicBackground;
 }
 
 .introSection {
@@ -37,7 +16,8 @@
     text-align: center;
     margin: 1em;
     align-self: center;
-    color: #555;
+    color: $grey;
+    z-index: 1;
   }
 
   .contactsWrapper {
@@ -62,13 +42,14 @@
     border-radius: 50%;
     background: #f9f4ed;
     background-size: contain;
-
-    @media (min-width: $md) {
-      & {
-        // justify-self: center;
-      }
-    }
   }
+}
+
+.content {
+  @include whiteBackground;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 5px 5px 20px #f3f3f3;
 }
 
 .contactsWrapperLink {
@@ -80,7 +61,49 @@
   }
 }
 
+.info {
+  @include whiteBackground;
+  display: grid;
+}
+
+.descriptionColumns {
+  display: grid;
+  padding: 2rem;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 2fr 7fr;
+  }
+}
+
+.descriptionIndent p {
+  position: relative;
+  text-indent: 1.5em;
+  margin: 0.5em;
+  z-index: 1;
+}
+
+.descriptionPointsStyle {
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.listItem {
+  list-style: none;
+  line-height: 1.5rem;
+
+  &:before {
+    content: "\2022";
+    color: $red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 1.5rem;
+  }
+}
+
 .downloadButton {
   @include button;
+  margin-bottom: 3rem;
   padding: 15px 20px;
 }

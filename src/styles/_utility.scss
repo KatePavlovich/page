@@ -1,5 +1,5 @@
 $xs: 320px;
-$sm: 576px;
+$sm: 414px;
 $md: 768px;
 $lg: 992px;
 $xl: 1024px;
@@ -11,13 +11,19 @@ $red: #ff6c08;
 $grey: #555;
 $transparentWhite: #ffffffd6;
 
+$smPadding: 1rem;
+
 @mixin basicBackground {
   display: grid;
-  padding-top: 4.375rem;
-  padding-bottom: 2rem;
+  padding-top: 3.375rem;
   max-width: $container;
   position: relative;
   overflow: hidden;
+
+  @media (min-width: $md) {
+    padding-top: 6.375rem;
+    padding-bottom: 3rem;
+  }
 
   &:before {
     position: absolute;

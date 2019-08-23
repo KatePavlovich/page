@@ -1,11 +1,15 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { ActiveMenuLink } from "../activeLink"
 import styles from "./Header.module.scss"
 import i18n from "../../i18n"
 import { useTranslation } from "react-i18next"
 
 const Header = () => {
-  const [lng, setLng] = useState("en")
+  const [lng, setLng] = useState("")
+
+  useEffect(() => {
+    setLng(i18n.language)
+  })
   const { t } = useTranslation()
 
   const changeLanguage = lng => {

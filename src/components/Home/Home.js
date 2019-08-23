@@ -21,7 +21,7 @@ const Home = () => {
               height="144"
             />
             <p>
-              {t("Tel")}:
+              {t("Tel")}
               <a
                 className={styles.contactsWrapperLink}
                 href="tel:+375293207933"
@@ -30,7 +30,7 @@ const Home = () => {
               </a>
             </p>
             <p>
-              {t("Email")}:
+              {t("Email")}
               <a
                 className={styles.contactsWrapperLink}
                 href="mailto:ekate.pavlovich@gmail.com"

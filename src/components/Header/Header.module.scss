@@ -1,65 +1,62 @@
 @import "src/styles/utility";
 
 header {
-  display: flex;
-  width: 100%;
-  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-gap: 1rem;
+  max-width: $xl;
   position: fixed;
   top: 0;
-  padding: 0.8em 0;
+  padding: $smPadding;
+  box-sizing: border-box;
   overflow: hidden;
   background-color: #fff;
   opacity: 0.9;
   z-index: 2;
+
+  @media (min-width: 414px) {
+    padding: $smPadding 2rem;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $container) {
+    padding: $smPadding 0;
+  }
 }
 
 .navbar {
-  text-align: center;
-  justify-self: center;
-
-  @media (min-width: $md) {
-    & {
-      display: grid;
-      grid-template-areas: ". col";
-      grid-template-columns: [col] 2fr [col] 1fr;
-    }
-  }
-
-  @media (min-width: $xl) {
-    & {
-      grid-template-columns: [col] 3fr [col] 1fr;
-    }
-  }
+  align-self: center;
+  justify-self: end;
 }
 
 .menu {
-  display: grid;
-  grid-gap: 1em;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
+  min-width: 230px;
+
+  @media (min-width: $sm) {
+    min-width: 270px;
+  }
 
   @media (min-width: $md) {
-    & {
-      grid-area: col;
-    }
-  }
-  @media (min-width: $xl) {
-    & {
-      grid-gap: 5em;
-    }
+    min-width: 370px;
   }
 
   & li {
     list-style-type: none;
+    font-size: 14px;
 
-    @media (min-width: $md) {
-      & {
-        justify-self: end;
-      }
+    @media (min-width: $sm) {
+      font-size: 16px;
     }
   }
 }
 
 .languageBtn {
   @include button;
+  margin: 0;
   padding: 5px 6px;
+  max-width: 37px;
 }

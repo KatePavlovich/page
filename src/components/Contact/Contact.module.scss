@@ -13,11 +13,10 @@
 
 .contactList {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
 
   @media (min-width: $md) {
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
     grid-gap: 2em;
   }
 }
@@ -39,24 +38,11 @@
   }
 }
 
-.contactItem:nth-child(even) {
-  grid-column: 3;
-  @media (min-width: $md) {
-    grid-column: unset;
-  }
-}
-
-.contactItem:last-child {
-  grid-column: 2;
-  @media (min-width: $md) {
-    grid-column: unset;
-  }
-}
-
 .advert {
   padding: 1em;
   font-weight: normal;
   font-size: 2rem;
+  text-align: center;
   color: $grey;
   text-shadow: 1px 1px 0px #fff;
   z-index: 1;

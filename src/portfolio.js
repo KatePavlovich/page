@@ -4,20 +4,18 @@ import Home from "./components/Home"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 
-class Portfolio extends Component {
-  render() {
-    return (
-      <div className="wrapper-page">
-        <Router>
-          <div>
-            <Route path="/" exact component={Home} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/contact" component={Contact} />
-          </div>
-        </Router>
-      </div>
-    )
-  }
+const Portfolio = () => {
+  return (
+    <div className="wrapper-page">
+      <Router>
+        <div>
+          <Route path="/" exact component={Home} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
+        </div>
+      </Router>
+    </div>
+  )
 }
 
 export default Portfolio

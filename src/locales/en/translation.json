@@ -1,5 +1,5 @@
 {
-  "Welcome": "Hello, my name is Kate. I'm a frontend developer",
+  "Welcome": "Hello, I'm Kate. I'm a frontend developer",
   "Education": "Education",
   "Certificates": "Certificates",
   "Skills": "Skills",
@@ -8,8 +8,8 @@
   "Educ1": "Belarusian State University, law faculty, 2006-2011",
   "Educ2": "School of Business of BSU, programmer-web-design, 2016-2017",
   "Download": "Download CV",
-  "Tel": "tel",
-  "Email": "email",
+  "Tel": "tel: ",
+  "Email": "email: ",
   "HideSkills": "hide skills",
   "WhatGave": "What it gave me",
   "Contact": "Contact me",

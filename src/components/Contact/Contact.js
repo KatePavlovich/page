@@ -2,7 +2,6 @@ import React from "react"
 import withLayout from "../Layout"
 import { ReactComponent as Github } from "../../img/github.svg"
 import { ReactComponent as Envelope } from "../../img/envelope.svg"
-import { ReactComponent as Facebook } from "../../img/facebook.svg"
 import { ReactComponent as Linkedin } from "../../img/linkedin.svg"
 import { ReactComponent as Phone } from "../../img/phone.svg"
 import { useTranslation } from "react-i18next"
@@ -31,15 +30,6 @@ const Contact = () => {
               aria-label="linkedIn"
             >
               <Linkedin />
-            </a>
-          </li>
-          <li className={styles.contactItem}>
-            <a
-              href="https://web.facebook.com/kate.pavlovich.1"
-              target="blank"
-              aria-label="facebook"
-            >
-              <Facebook />
             </a>
           </li>
           <li className={styles.contactItem}>

@@ -5,10 +5,12 @@
 }
 
 .introSection {
-  display: grid;
+  @include whiteBackground;
 
   @media (min-width: $md) {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background-color: unset;
   }
 
   h1 {
@@ -48,8 +50,15 @@
 .content {
   @include whiteBackground;
   padding: 2rem;
-  margin-bottom: 3rem;
-  box-shadow: 5px 5px 20px #f3f3f3;
+
+  @media (min-width: $md) {
+    margin-bottom: 3rem;
+    box-shadow: 5px 5px 20px #f3f3f3;
+  }
+
+  @media (min-width: $container) {
+    padding-left: 0;
+  }
 }
 
 .contactsWrapperLink {
@@ -69,9 +78,14 @@
 .descriptionColumns {
   display: grid;
   padding: 2rem;
+  grid-row-gap: 0.5rem;
 
-  @media (min-width: 1024px) {
+  @media (min-width: $xl) {
     grid-template-columns: 2fr 7fr;
+  }
+
+  @media (min-width: $container) {
+    padding-left: 0;
   }
 }
 
@@ -83,11 +97,13 @@
 }
 
 .descriptionPointsStyle {
+  font-size: 20px;
   font-weight: bold;
   line-height: 1.5rem;
 }
 
 .listItem {
+  padding-left: 24px;
   list-style: none;
   line-height: 1.5rem;
 

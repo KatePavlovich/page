@@ -2,10 +2,17 @@
 
 .content {
   @include basicBackground;
+  padding: 3.375rem $smPadding;
+  grid-row-gap: $smPadding;
+
+  @media (min-width: $md) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   @media (min-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 4em;
-    z-index: 1;
   }
 }

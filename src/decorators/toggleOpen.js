@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from "react"
 
-export default (OriginalComponent) =>
+export default OriginalComponent =>
   class ToggleOpen extends Component {
     state = {
       isOpen: true
     }
 
-    toggleOpen = (e) =>{
-    e.preventDefault();
+    toggleOpen = e => {
+      e.preventDefault()
       this.setState({
         isOpen: !this.state.isOpen
       })

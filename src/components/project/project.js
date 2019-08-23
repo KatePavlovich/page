@@ -41,7 +41,7 @@ const Project = ({
         </div>
       </a>
       {/* <div className={styles.skillsWrapper}> */}
-      {isOpen && <ul>{getSkills()}</ul>}
+      {isOpen && <ul className={styles.skillList}>{getSkills()}</ul>}
       {/* </div> */}
       <button onClick={toggleOpen} className={styles.projectButton}>
         {text}

@@ -1,3 +1,5 @@
+@import "./_utility.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +24,7 @@ body {
 .nav-link--active {
   font-weight: 900;
   text-transform: uppercase;
-  color: #ae003a;
+  color: $red;
 }
 
 main {
@@ -67,11 +69,11 @@ main {
 
 h2 {
   padding: 1em;
-  color: #ae003a;
+  color: $red;
 }
 
 .nav-link:hover {
-  color: #ae003a;
+  color: $red;
   transition: 0.5s;
 }
 

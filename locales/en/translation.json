@@ -1,20 +1,7 @@
 {
-  "Welcome": "Hello, I'm Kate. I'm a frontend developer",
-  "Education": "Education",
-  "Certificates": "Certificates",
-  "Skills": "Skills",
-  "English level": "English level",
-  "Content": "A few years ago I started with self-education and dedicated all my free time to studying programming and solving tasks from different sources. I graduated requalification courses on the base of second education and got qualification  'programmer-web-design'. Attended The Rolling Scopes School, freeCodeCamp, learn.javascript.ru courses and more.% Now I am mostly interested in React and its' ecosystem but also open to opportunities to study something new.",
-  "Educ1": "Belarusian State University, law faculty, 2006-2011",
-  "Educ2": "School of Business of BSU, programmer-web-design, 2016-2017",
-  "Download": "Download CV",
-  "Tel": "tel: ",
-  "Email": "email: ",
-  "HideSkills": "hide skills",
-  "WhatGave": "What it gave me",
-  "Contact": "Contact me",
-  "LetsWork": "Let's work together!",
-  "About": "About",
-  "Work": "work",
-  "ContactMenu": "contact"
+  "Welcome": "Welcome to react using react-i18next",
+  "description": {
+    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
+    "part2": "Switch language between english and german using buttons above."
+  }
 }

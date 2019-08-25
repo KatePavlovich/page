@@ -1,9 +1,9 @@
 {
   "main.css": "/portfolio-with-react/static/css/main.b02fb75e.chunk.css",
-  "main.js": "/portfolio-with-react/static/js/main.7a124a15.chunk.js",
-  "main.js.map": "/portfolio-with-react/static/js/main.7a124a15.chunk.js.map",
-  "static/js/1.9fe09d0e.chunk.js": "/portfolio-with-react/static/js/1.9fe09d0e.chunk.js",
-  "static/js/1.9fe09d0e.chunk.js.map": "/portfolio-with-react/static/js/1.9fe09d0e.chunk.js.map",
+  "main.js": "/portfolio-with-react/static/js/main.deb1ba97.chunk.js",
+  "main.js.map": "/portfolio-with-react/static/js/main.deb1ba97.chunk.js.map",
+  "static/js/1.28d278fc.chunk.js": "/portfolio-with-react/static/js/1.28d278fc.chunk.js",
+  "static/js/1.28d278fc.chunk.js.map": "/portfolio-with-react/static/js/1.28d278fc.chunk.js.map",
   "runtime~main.js": "/portfolio-with-react/static/js/runtime~main.f964a016.js",
   "runtime~main.js.map": "/portfolio-with-react/static/js/runtime~main.f964a016.js.map",
   "static/media/github.e9666b39.svg": "/portfolio-with-react/static/media/github.e9666b39.svg",
@@ -12,6 +12,6 @@
   "static/media/envelope.054ebe7d.svg": "/portfolio-with-react/static/media/envelope.054ebe7d.svg",
   "static/css/main.b02fb75e.chunk.css.map": "/portfolio-with-react/static/css/main.b02fb75e.chunk.css.map",
   "index.html": "/portfolio-with-react/index.html",
-  "precache-manifest.e34df2ffbcf4a15dc78437d30633769d.js": "/portfolio-with-react/precache-manifest.e34df2ffbcf4a15dc78437d30633769d.js",
+  "precache-manifest.5a53c77d750c885b4cf5ed686f9688bc.js": "/portfolio-with-react/precache-manifest.5a53c77d750c885b4cf5ed686f9688bc.js",
   "service-worker.js": "/portfolio-with-react/service-worker.js"
 }

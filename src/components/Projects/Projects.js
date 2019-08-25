@@ -1,6 +1,6 @@
 import React from "react"
 import Project from "../Project"
-import projects from "../../projectsBase"
+import projects from "../../data/projectsBase"
 import withLayout from "../Layout"
 import styles from "./Projects.module.scss"
 

@@ -14,7 +14,7 @@ header {
   opacity: 0.9;
   z-index: 2;
 
-  @media (min-width: 414px) {
+  @media (min-width: $sm) {
     padding: $smPadding 2rem;
     width: 100%;
     left: 50%;
@@ -46,10 +46,10 @@ header {
 
   & li {
     list-style-type: none;
-    font-size: 14px;
+    font-size: 0.875rem;
 
     @media (min-width: $sm) {
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 }
@@ -57,6 +57,6 @@ header {
 .languageBtn {
   @include button;
   margin: 0;
-  padding: 5px 6px;
+  padding: 0.3125rem 0.375rem;
   max-width: 37px;
 }

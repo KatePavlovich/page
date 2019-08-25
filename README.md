@@ -2,10 +2,8 @@
 
 ## Description
 
-CV made on react
+my CV
 
 ## Technology Stack
 
-* react
-
- 
+- react

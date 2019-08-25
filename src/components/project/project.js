@@ -1,20 +1,17 @@
-import React from "react"
-import toggleOpen from "../../decorators/toggleOpen"
+import React, { useState } from "react"
 import { useTranslation } from "react-i18next"
 import styles from "./Project.module.scss"
 
-const Project = ({
-  href,
-  src,
-  width,
-  height,
-  name,
-  isOpen,
-  toggleOpen,
-  technologies
-}) => {
+const Project = ({ href, src, width, height, name, technologies }) => {
   const { t } = useTranslation()
+  const [isOpen, setIsOpen] = useState(true)
+
   const text = isOpen ? t("HideSkills") : t("WhatGave")
+
+  const toggleOpen = e => {
+    e.preventDefault()
+    setIsOpen(!isOpen)
+  }
 
   const getSkills = () => {
     const technologiesList = technologies.map(i => (
@@ -40,9 +37,7 @@ const Project = ({
           />
         </div>
       </a>
-      {/* <div className={styles.skillsWrapper}> */}
       {isOpen && <ul className={styles.skillList}>{getSkills()}</ul>}
-      {/* </div> */}
       <button onClick={toggleOpen} className={styles.projectButton}>
         {text}
       </button>
@@ -50,4 +45,4 @@ const Project = ({
   )
 }
 
-export default toggleOpen(Project)
+export default Project

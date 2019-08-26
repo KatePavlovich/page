@@ -1,5 +1,5 @@
 import React from "react"
-import { HashRouter as Router, Route } from "react-router-dom"
+import { BrowserRouter as Router, Route } from "react-router-dom"
 import Home from "./components/Home"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
@@ -7,7 +7,7 @@ import Contact from "./components/Contact"
 const Portfolio = () => {
   return (
     <div className="wrapper-page">
-      <Router>
+      <Router basename={`${process.env.PUBLIC_URL}/`}>
         <div>
           <Route path="/" exact component={Home} />
           <Route path="/projects" component={Projects} />

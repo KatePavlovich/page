@@ -87,12 +87,17 @@
   @media (min-width: $container) {
     padding-left: 0;
   }
+
+  & p {
+    line-height: 1.5rem;
+  }
 }
 
 .descriptionIndent p {
   position: relative;
   text-indent: 1.5em;
   margin: 0.5em;
+  line-height: 1.5rem;
   z-index: 1;
 }
 

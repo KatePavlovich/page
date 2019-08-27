@@ -145,8 +145,9 @@ const Home = () => {
           <div className={styles.descriptionColumns}>
             <p className={styles.descriptionPointsStyle}>{t("Skills")}: </p>
             <p>
-              JavaScript, HTML5, CSS3, Jquery, Sass, Bootstrap, Ajax, OOP, ES6,
-              Git, React, Redux
+              JavaScript, HTML5, CSS3, React, Redux, Sass, Bootstrap, Ajax, OOP,
+              ES6, Git, Jquery, graphql, gatsby, linux, JSON, canvas, SVG, Ant
+              Design, css modules, styled-components, DatoCMS
             </p>
           </div>
           <div className={styles.descriptionColumns}>

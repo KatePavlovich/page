@@ -44,6 +44,19 @@ const Contact = () => {
           </li>
         </ul>
       </nav>
+      <div className={styles.contactsWraper}>
+        <a className={styles.contactLink} href="tel:+375293207933">
+          +37529 320 79 33
+        </a>
+
+        <a
+          className={styles.contactLink}
+          href="mailto:ekate.pavlovich@gmail.com"
+        >
+          ekate.pavlovich@gmail.com
+        </a>
+      </div>
+
       <h2 className={styles.advert}>{t("LetsWork")}</h2>
     </section>
   )

@@ -4,6 +4,7 @@
   @include basicBackground;
 
   justify-items: center;
+  grid-auto-rows: 160px;
   height: 97vh;
 }
 
@@ -36,6 +37,21 @@
     transition: 0.5s;
     z-index: 1;
   }
+}
+
+.contactsWraper {
+  display: grid;
+  justify-items: center;
+  align-items: end;
+  z-index: 1;
+}
+
+.contactLink {
+  color: $red;
+  font-weight: bold;
+}
+.contactLink:last-of-type {
+  align-self: center;
 }
 
 .advert {

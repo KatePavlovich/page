@@ -16,5 +16,13 @@
   "LetsWork": "Let's work together!",
   "About": "About",
   "Work": "work",
-  "ContactMenu": "contact"
+  "ContactMenu": "contact",
+  "descrHeroes": "This site is a teamwork of many people. My personal components are Stories and News.",
+  "descrMarkery": "Test task for Markery.io",
+  "descrCalc": "One of my first projects for learning React",
+  "descrRunner": "Game on native JavaScript",
+  "descrMMG": "Game on native JavaScript",
+  "descrQuat": "Training App to practice with Rest API",
+  "descrWeather": "Trainear App to practice with Rest API and more",
+  "descrMelc": "Diploma project for School of Business of BSU where I was able to try myself in different roles: designer, content manager, engineer, developer. All project from drafts to release"
 }

@@ -2,7 +2,15 @@ import React, { useState } from "react"
 import { useTranslation } from "react-i18next"
 import styles from "./Project.module.scss"
 
-const Project = ({ href, src, width, height, name, technologies }) => {
+const Project = ({
+  href,
+  src,
+  width,
+  height,
+  name,
+  technologies,
+  description
+}) => {
   const { t } = useTranslation()
   const [isOpen, setIsOpen] = useState(true)
 
@@ -36,6 +44,7 @@ const Project = ({ href, src, width, height, name, technologies }) => {
             height={height}
           />
         </div>
+        <p className={styles.description}>{t(`${description}`)}</p>
       </a>
       {isOpen && <ul className={styles.skillList}>{getSkills()}</ul>}
       <button onClick={toggleOpen} className={styles.projectButton}>

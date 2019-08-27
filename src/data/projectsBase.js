@@ -7,8 +7,7 @@ export default [
       "https://res.cloudinary.com/dtpnizbx2/image/upload/v1566669461/Snag_8f05172_i3lont.png",
     width: "600",
     height: "390",
-    description:
-      "This site is a teamwork of many people. My personal components are stories and news.",
+    description: "descrHeroes",
     technologies: [
       "React",
       "Gatsby",
@@ -25,6 +24,7 @@ export default [
       "https://res.cloudinary.com/dtpnizbx2/image/upload/v1566669445/Snag_8f012d3_nfhcc6.png",
     width: "600",
     height: "390",
+    description: "descrMarkery",
     technologies: ["Css grid", "Gulp"]
   },
   {
@@ -35,6 +35,7 @@ export default [
       "https://res.cloudinary.com/dtpnizbx2/image/upload/v1566673492/Snag_92dcc18_nl3pm6.png",
     width: "600",
     height: "390",
+    description: "descrCalc",
     technologies: ["React", "ES6", "grid css"]
   },
   {
@@ -45,6 +46,7 @@ export default [
       "https://github.com/KatePavlovich/KatePavlovich.github.io/blob/master/portfolio/img/screenshot3.jpg?raw=true",
     width: "600",
     height: "423",
+    description: "descrRunner",
     technologies: [
       "OOP",
       "canvas",
@@ -62,6 +64,7 @@ export default [
       "https://github.com/KatePavlovich/KatePavlovich.github.io/blob/master/portfolio/img/screenshot1-match-game.jpg?raw=true",
     width: "600",
     height: "423",
+    description: "descrMMG",
     technologies: [
       "OOP",
       "DOM",
@@ -80,6 +83,7 @@ export default [
       "https://github.com/KatePavlovich/KatePavlovich.github.io/blob/master/portfolio/img/1.jpg?raw=true",
     width: "600",
     height: "390",
+    description: "descrQuat",
     technologies: ["jQuery", "Bootstrap", "Rest Api"]
   },
   {
@@ -90,6 +94,7 @@ export default [
       "https://github.com/KatePavlovich/KatePavlovich.github.io/blob/master/portfolio/img/weaterApp.jpg?raw=true",
     width: "600",
     height: "390",
+    description: "descrWeather",
     technologies: ["jQuery", "Bootstrap", "Rest Api", "geolocation"]
   },
   {
@@ -100,6 +105,7 @@ export default [
       "https://github.com/KatePavlovich/KatePavlovich.github.io/blob/master/portfolio/img/screenshot1-melc.jpg?raw=true",
     width: "600",
     height: "423",
+    description: "descrMelc",
     technologies: [
       "cms Wordpress",
       "project design",

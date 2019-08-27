@@ -6,7 +6,7 @@ import styles from "./Projects.module.scss"
 
 const Projects = () => {
   const projectsList = projects.map(
-    ({ id, link, src, width, height, name, technologies }) => (
+    ({ id, link, src, width, height, name, technologies, description }) => (
       <Project
         href={link}
         src={src}
@@ -14,6 +14,7 @@ const Projects = () => {
         height={height}
         name={name}
         technologies={technologies}
+        description={description}
         key={id}
       />
     )

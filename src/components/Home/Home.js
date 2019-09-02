@@ -168,7 +168,7 @@ const Home = () => {
           </div>
           <a
             className={styles.downloadButton}
-            href="file/Profile.pdf"
+            href="file/CVKatePavlovich.pdf"
             target="_blank"
             download
           >

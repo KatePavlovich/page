@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { useTranslation } from "react-i18next"
 import styles from "./Project.module.scss"
+import Fade from "react-reveal/Fade"
 
 const Project = ({
   href,
@@ -46,7 +47,11 @@ const Project = ({
         </div>
         <p className={styles.description}>{t(`${description}`)}</p>
       </a>
-      {isOpen && <ul className={styles.skillList}>{getSkills()}</ul>}
+      {isOpen && (
+        <Fade>
+          <ul className={styles.skillList}>{getSkills()}</ul>
+        </Fade>
+      )}
       <button onClick={toggleOpen} className={styles.projectButton}>
         {text}
       </button>

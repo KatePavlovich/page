@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://katepavlovich.github.io/portfolio-with-react",
+  "homepage": "https://katepavlovich.github.io/page",
   "dependencies": {
     "classnames": "^2.2.6",
     "gh-pages": "^2.1.1",

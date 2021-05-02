@@ -1,10 +1,10 @@
-import React from "react"
-import withLayout from "../Layout"
-import styles from "./Home.module.scss"
-import { useTranslation } from "react-i18next"
+import React from "react";
+import withLayout from "../Layout";
+import styles from "./Home.module.scss";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
     <div>
       <section className={styles.section}>
@@ -50,7 +50,7 @@ const Home = () => {
                     {item}
                     <br />
                   </p>
-                )
+                );
               })}
           </article>
         </section>
@@ -177,7 +177,7 @@ const Home = () => {
         </section>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default withLayout(Home)
+export default withLayout(Home);

@@ -1,8 +1,8 @@
-import React from "react"
-import { BrowserRouter as Router, Route } from "react-router-dom"
-import Home from "./components/Home"
-import Projects from "./components/Projects"
-import Contact from "./components/Contact"
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from "./components/Home";
+import { Projects } from "./components/Projects";
+import Contact from "./components/Contact";
 
 const Portfolio = () => {
   return (
@@ -15,7 +15,7 @@ const Portfolio = () => {
         </div>
       </Router>
     </div>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

@@ -1,36 +1,36 @@
-import React, { useState } from "react"
-import { useTranslation } from "react-i18next"
-import styles from "./Project.module.scss"
-import Fade from "react-reveal/Fade"
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import styles from "./Project.module.scss";
+import Fade from "react-reveal/Fade";
 
-const Project = ({
+export const Project = ({
   href,
   src,
   width,
   height,
   name,
   technologies,
-  description
+  description,
 }) => {
-  const { t } = useTranslation()
-  const [isOpen, setIsOpen] = useState(true)
+  const { t } = useTranslation();
+  const [isOpen, setIsOpen] = useState(true);
 
-  const text = isOpen ? t("HideSkills") : t("WhatGave")
+  const text = isOpen ? t("HideSkills") : t("WhatGave");
 
-  const toggleOpen = e => {
-    e.preventDefault()
-    setIsOpen(!isOpen)
-  }
+  const toggleOpen = (e) => {
+    e.preventDefault();
+    setIsOpen(!isOpen);
+  };
 
   const getSkills = () => {
-    const technologiesList = technologies.map(i => (
+    const technologiesList = technologies.map((i) => (
       <li className={styles.skillItem} key={i}>
         {i}
       </li>
-    ))
+    ));
 
-    return technologiesList
-  }
+    return technologiesList;
+  };
 
   return (
     <div className={styles.container}>
@@ -56,7 +56,5 @@ const Project = ({
         {text}
       </button>
     </div>
-  )
-}
-
-export default Project
+  );
+};

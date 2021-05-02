@@ -1,10 +1,10 @@
-import React from "react"
-import Project from "../Project"
-import projects from "../../data/projectsBase"
-import withLayout from "../Layout"
-import styles from "./Projects.module.scss"
+import React from "react";
+import { Project } from "../Project";
+import projects from "../../data/projectsBase";
+import withLayout from "../Layout";
+import styles from "./Projects.module.scss";
 
-const Projects = () => {
+const ProjectsComponent = () => {
   const projectsList = projects.map(
     ({ id, link, src, width, height, name, technologies, description }) => (
       <Project
@@ -18,8 +18,8 @@ const Projects = () => {
         key={id}
       />
     )
-  )
-  return <section className={styles.content}>{projectsList}</section>
-}
+  );
+  return <section className={styles.content}>{projectsList}</section>;
+};
 
-export default withLayout(Projects)
+export const Projects = withLayout(ProjectsComponent);

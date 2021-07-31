@@ -13,10 +13,9 @@
     background-color: unset;
   }
 
-  h1 {
+  .intro {
     font-size: 2em;
-    text-align: center;
-    margin: 1em;
+    margin: 1em $smPadding;
     align-self: center;
     color: $grey;
     z-index: 1;
@@ -73,6 +72,7 @@
 .info {
   @include whiteBackground;
   display: grid;
+  padding-left: $smPadding;
 }
 
 .descriptionColumns {
@@ -93,12 +93,10 @@
   }
 }
 
-.descriptionIndent p {
-  position: relative;
-  text-indent: 1.5em;
-  margin: 0.5em;
+.descriptionIndent {
+  margin: 0.5em 0 1rem 0;
+  padding-left: $smPadding;
   line-height: 1.5rem;
-  z-index: 1;
 }
 
 .descriptionPointsStyle {

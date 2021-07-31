@@ -11,7 +11,10 @@ const Home = () => {
         <div className={styles.parallax} />
 
         <section className={styles.introSection}>
-          <h1>{t("Welcome")}</h1>
+          <h1 className={styles.intro}>
+            {t("Welcome")}
+            <p>{t("Welcome2")}</p>
+          </h1>
           <div className={styles.contactsWrapper}>
             <img
               className={styles.bioPhoto}
@@ -41,14 +44,13 @@ const Home = () => {
           </div>
         </section>
         <section className={styles.content}>
-          <article className={styles.descriptionIndent}>
+          <article>
             {t("Content")
               .split("%")
               .map((item, key) => {
                 return (
-                  <p key={key}>
+                  <p className={styles.descriptionIndent} key={key}>
                     {item}
-                    <br />
                   </p>
                 );
               })}
